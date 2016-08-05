@@ -1,0 +1,74 @@
+#N canvas 571 100 843 449 10;
+#X obj 460 54 inlet;
+#X symbolatom 154 114 8 0 0 0 - - -;
+#X msg 113 28 set _;
+#X msg 152 3 set overflow;
+#X obj 188 101 tgl 12 0 empty empty empty 17 7 0 10 -62286 -204800
+-204800 0 1;
+#X obj 628 114 & 1;
+#X obj 586 114 & 2;
+#X obj 544 114 & 4;
+#X obj 502 114 & 8;
+#X obj 460 114 & 16;
+#X obj 418 114 & 32;
+#X obj 376 114 & 64;
+#X obj 335 114 & 128;
+#X obj 113 -21 moses 256;
+#X obj 270 210 outlet;
+#X obj 228 210 outlet;
+#X obj 186 210 outlet;
+#X obj 144 210 outlet;
+#X obj 102 210 outlet;
+#X obj 60 210 outlet;
+#X obj -18 210 outlet hibit;
+#X obj 312 210 outlet lobit;
+#X obj 193 131 tgl 13 0 empty empty 1 4 6 0 9 -33289 -80526 -128992
+0 1;
+#X obj 180 131 tgl 13 0 empty empty 2 4 6 0 9 -33289 -80526 -128992
+0 2;
+#X obj 141 131 tgl 13 0 empty empty 16 2 6 0 8 -33289 -80526 -128992
+0 16;
+#X obj 128 131 tgl 13 0 empty empty 32 2 6 0 8 -33289 -80526 -128992
+0 32;
+#X obj 115 131 tgl 13 0 empty empty 64 2 6 0 8 -33289 -80526 -128992
+0 64;
+#X obj 102 131 tgl 13 0 empty empty 128 0 6 0 6 -33289 -80526 -162280
+0 128;
+#X obj 154 131 tgl 13 0 empty empty 8 4 6 0 9 -33289 -80526 -128992
+0 8;
+#X obj 167 131 tgl 13 0 empty empty 4 4 6 0 9 -33289 -80526 -128992
+0 4;
+#X text 348 141 convert decimal number to binary \, sort of.;
+#X text 348 154 each output is not 0/1 but 0 or 1*decimal;
+#X text 348 166 where summing all outputs will result in orginal;
+#X text 348 178 decimal number.;
+#X connect 0 0 5 0;
+#X connect 0 0 6 0;
+#X connect 0 0 7 0;
+#X connect 0 0 9 0;
+#X connect 0 0 10 0;
+#X connect 0 0 11 0;
+#X connect 0 0 12 0;
+#X connect 0 0 8 0;
+#X connect 0 0 13 0;
+#X connect 2 0 1 0;
+#X connect 3 0 1 0;
+#X connect 5 0 22 0;
+#X connect 6 0 23 0;
+#X connect 7 0 29 0;
+#X connect 8 0 28 0;
+#X connect 9 0 24 0;
+#X connect 10 0 25 0;
+#X connect 11 0 26 0;
+#X connect 12 0 27 0;
+#X connect 13 0 2 0;
+#X connect 13 1 3 0;
+#X connect 22 0 21 0;
+#X connect 23 0 14 0;
+#X connect 24 0 17 0;
+#X connect 25 0 18 0;
+#X connect 26 0 19 0;
+#X connect 27 0 20 0;
+#X connect 28 0 16 0;
+#X connect 29 0 15 0;
+#X coords 0 -1 1 1 108 48 1 100 100;

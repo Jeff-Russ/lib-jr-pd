@@ -1,0 +1,10 @@
+#N canvas 0 22 450 300 10;
+#X obj 224 26 inlet;
+#X obj 225 86 int;
+#X obj 224 56 t a b;
+#X obj 225 112 outlet;
+#X text 182 4 outputs previous (integer) input;
+#X connect 0 0 2 0;
+#X connect 1 0 3 0;
+#X connect 2 0 1 1;
+#X connect 2 1 1 0;

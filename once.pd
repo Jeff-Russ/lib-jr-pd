@@ -1,0 +1,28 @@
+#N canvas 404 224 843 449 10;
+#X obj -72 -38 spigot;
+#X msg -39 -78 1;
+#X msg -23 -55 0;
+#X obj -72 -130 inlet;
+#X obj -39 -110 inlet bang_to_open;
+#X symbolatom 2 16 6 0 0 0 - - -;
+#X obj 10 -44 loadbang;
+#X obj -72 -2 outlet;
+#X obj 42 17 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -4034
+-4034;
+#X msg 1 -81 set opened;
+#X msg 10 -21 set closed;
+#X text 95 -83 inlet 1 will be allowed but no more.;
+#X text 96 -64 Bang inlet 2 again to let one more through.;
+#X text 96 -96 Bang inlet 2 and the next input to;
+#X connect 0 0 2 0;
+#X connect 0 0 10 0;
+#X connect 0 0 7 0;
+#X connect 1 0 0 1;
+#X connect 2 0 0 1;
+#X connect 3 0 0 0;
+#X connect 4 0 1 0;
+#X connect 4 0 9 0;
+#X connect 6 0 10 0;
+#X connect 9 0 5 0;
+#X connect 10 0 5 0;
+#X coords 0 -1 1 1 60 34 1 0 0;

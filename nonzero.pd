@@ -1,0 +1,12 @@
+#N canvas 247 275 450 300 10;
+#X obj 170 92 inlet;
+#X obj 170 119 != 0;
+#X obj 170 153 * \$1;
+#X obj 210 92 inlet;
+#X obj 170 191 outlet;
+#X text 166 49 outputs a value set by arg1/inlet2;
+#X text 167 60 whenever left inlet receives nonzero;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 4 0;
+#X connect 3 0 2 1;

@@ -1,0 +1,17 @@
+#N canvas 404 224 843 449 10;
+#X obj -29 -21 spigot;
+#X obj -29 -98 inlet;
+#X obj 1 15 bng 8 250 50 0 empty empty empty 17 7 0 10 -66577 -4034
+-4034;
+#X obj -29 51 outlet;
+#X obj 4 -46 == \$1;
+#X obj -29 -72 t a a;
+#X obj 31 -95 inlet;
+#X connect 0 0 2 0;
+#X connect 0 0 3 0;
+#X connect 1 0 5 0;
+#X connect 4 0 0 1;
+#X connect 5 0 0 0;
+#X connect 5 1 4 0;
+#X connect 6 0 4 1;
+#X coords 0 -1 1 1 24 24 1 0 0;

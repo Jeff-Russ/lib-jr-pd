@@ -1,0 +1,23 @@
+#N canvas 100 323 587 358 10;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array notegraph 128 float 2;
+#X coords 0 2.1 128 -1 460 40 1 0 0;
+#X restore 100 100 graph;
+#X obj 108 72 tabwrite notegraph;
+#X obj 473 72 tabread notegraph;
+#X obj 473 174 outlet;
+#X text 282 15 See what notes are on or off;
+#X obj 108 34 inlet val;
+#X obj 213 34 inlet note;
+#X obj 473 34 inlet checknote;
+#X text 107 172 Try sending val of 1 for note on and -1 for off.;
+#X text 106 184 That way you'll know what notes have not been played
+;
+#X text 106 196 because unplayed notes will still be on 0;
+#X text 107 215 The display range is -1 to 2.1 so you can use 2;
+#X text 107 227 for something else.;
+#X connect 2 0 3 0;
+#X connect 5 0 1 0;
+#X connect 6 0 1 1;
+#X connect 7 0 2 0;
+#X coords 0 -1 1 1 460 40 2 100 100;

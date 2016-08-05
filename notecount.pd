@@ -1,20 +1,20 @@
 #N canvas 573 313 450 300 10;
-#X obj 62 -19 inlet;
-#X obj 124 -19 inlet panic;
-#X msg 152 85 0;
-#X obj 101 67 counter;
-#X obj 62 8 moses 1;
-#X msg 101 35 inc;
-#X msg 62 35 dec;
-#X floatatom 101 113 3 0 0 0 - - -;
-#X obj 101 146 outlet;
-#X obj 124 115 bng 12 250 50 0 empty empty o 4 5 0 10 -66577 -258113
+#X obj 121 -31 inlet;
+#X obj 183 -31 inlet panic;
+#X msg 211 73 0;
+#X obj 160 55 counter;
+#X obj 121 -4 moses 1;
+#X msg 160 23 inc;
+#X msg 121 23 dec;
+#X floatatom 160 101 3 0 0 0 - - -;
+#X obj 160 134 outlet;
+#X obj 183 103 bng 12 250 50 0 empty empty o 4 5 0 10 -66577 -258113
 -262144;
-#X text 157 17 The output is incremented with each;
-#X text 157 0 Inlet 1 should be velocities.;
-#X text 157 29 nonzero input and decremented with each;
-#X text 157 42 input of zero.;
-#X text 158 58 bang inlet 2 to reset to zero (panic);
+#X text 216 5 The output is incremented with each;
+#X text 216 -12 Inlet 1 should be velocities.;
+#X text 216 17 nonzero input and decremented with each;
+#X text 216 30 input of zero.;
+#X text 217 46 bang inlet 2 to reset to zero (panic);
 #X connect 0 0 4 0;
 #X connect 1 0 9 0;
 #X connect 2 0 3 3;
@@ -25,4 +25,4 @@
 #X connect 6 0 3 0;
 #X connect 7 0 8 0;
 #X connect 9 0 2 0;
-#X coords 0 -1 1 1 40 34 1 100 100;
+#X coords 0 -1 1 1 96 18 1 100 100;
